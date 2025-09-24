@@ -1,0 +1,122 @@
+//Classnote-Day07-Example 01
+//Array Single Digit
+//project Sample
+package org.test;
+import java.lang.String;
+public class SampleOne {
+    public static void main(String[] args) {
+        int a[] = new int[5];
+            a[0] = 10;
+            a[1] = 30;
+            a[2] = 40;
+            a[3] = 60;
+            a[4] = 20;
+            System.out.println(a[3]);
+            int b = a.length;//during array this type
+                System.out.println("a length is "+b);
+            System.out.println("***normal for loop***");
+            //       1    2    4
+            for(int i=0; i<b; i++){
+                //                   3
+                System.out.println(a[i]);
+            }
+                System.out.println("***enhanced for loop/ forelse loop***");
+            for(int c:a){
+                System.out.println(c);
+            }
+    }
+}
+/* Workflow of example 01
+1       2       3       4
+==============================
+i=0     0<5     0       0+1=1
+i=1     1<5     1       1+1=2
+i=2     2<5     2       2+1=3
+i=3     3<5     3       3+1=4
+i=4     4<5     4       4+1=5
+i=5     5<5    --> terminate
+===============================
+Run time output
+60
+a length is 5
+***normal for loop***
+10
+30
+40
+60
+20
+***enhanced for loop/ forelse loop***
+10
+30
+40
+60
+20
+*/
+
+
+
+
+
+//Classnote-Day07-Example 02
+//Array double Digit
+//project Sample
+package org.test;
+public class SampleOne {
+    public static void main(String[] args) {
+        int a[][] = new int[2][3];
+            a[0][0] = 100;
+            a[0][1] = 200;
+            a[0][2] = 300;
+            a[1][0] = 400;
+            a[1][1] = 500;
+            a[1][2] = 600;
+            System.out.println(a[1][1]);
+            //       1     2   7
+            for(int i=0; i<2; i++){
+              //      3       4     6
+                for(int j=0; j<3; j++){
+                //                         5 
+                    System.out.println(a[i][j]);    
+                }          
+            }
+            System.out.println("***another method***");
+            for(int [] b:a ) {
+                for(int c:b){
+                    System.out.println(c);
+                }
+            }
+                
+    }
+
+}
+/*
+Workflow example 02
+1       2       3       4       5       6       7      
+======================================================
+i=0     i<2                                     0+1=1
+                j=0     0<3     0,0       0+1=1   
+                j=1     1<3     0,1       1+1=2       
+                j=2     2<3     0,2       2+1=3
+                j=3     3<3     --> terminate
+i=1     1<2                                      1+1=2 
+                j=0     0<3     1,0       0+1=1   
+                j=1     1<3     1,1       1+1=2       
+                j=2     2<3     1,2       2+1=3
+                j=3     3<3     --> terminate                                 
+i=2     2<2    --> terminate                                
+Run time output
+500
+100
+200
+300
+400
+500
+600
+***another method***
+100
+200
+300
+400
+500
+600
+*/
