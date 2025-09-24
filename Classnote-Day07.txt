@@ -120,3 +120,124 @@ Run time output
 500
 600
 */
+
+
+
+
+
+//Class Assigenment 01
+//Array double Digit
+//project Sample
+package org.test;
+import java.lang.String;
+public class SampleOne {
+    public static void main(String[] args) {
+        String plannet[] = new String[10];
+            plannet[0] = "plannet numerology";
+            plannet[1] = "sooriyan = 1";
+            plannet[2] = "chandhiran = 2";
+            plannet[3] = "guru = 3";
+            plannet[4] = "rahu = 4";
+            plannet[5] = "budhan = 5";
+            plannet[6] = "sukran = 6";
+            plannet[7] = "kedhu = 7";
+            plannet[8] = "sani = 8";
+            plannet[9] = "chevvai = 9";
+        int plannet1 = plannet.length;//only array method without ()
+            System.out.println("plannet length is "+plannet1);
+            for(int i=0; i<plannet1; i++){
+                System.out.println(plannet[i]);
+            }
+    }
+}
+/* Runtime output
+plannet length is 10
+plannet numerology
+sooriyan = 1
+chandhiran = 2
+guru = 3
+rahu = 4
+budhan = 5
+sukran = 6
+kedhu = 7
+sani = 8
+chevvai = 9
+*/
+
+
+
+
+
+//Classnote assignment 02
+//array double Digit
+//project Sample
+package org.test;
+public class SampleOne {
+    public static void main(String[] args){
+        String star[][] = new String[1][9];
+            star[0][0]  = "sooriyan"; 
+            star[0][1]  = "chandhiran";
+            star[0][2]  = "chevvai";
+            star[0][3]  = "budhan";
+            star[0][4]  = "guru";
+            star[0][5]  = "sukran";
+            star[0][6]  = "sani";
+            star[0][7]  = "rahu";
+            star[0][8]  = "kedhu";
+            //        1    2     7
+            for(int i=0; i<1; i++){
+                //        3   4     6
+                for(int j=0; j<9; j++){
+                    //                       5
+                    System.out.println(star[i][j]);
+                }
+            }
+            System.out.println("***another method value based***");
+            for (String [] star1:star) {
+                for(String star2:star1) {
+                    System.out.println(star2);
+                }
+            }
+
+    }
+
+}
+/* Workflow classnote asssignment 02
+1       2       3       4       5           6       7
+==========================================================
+i=0     0<1                                         0+1=1
+                j=0       0<9   0,0         0+1=1
+                j=1       1<9   1,0         1+1=2              
+                j=2       2<9   2,0         2+1=3
+                j=3       3<9   3,0         3+1=4
+                j=4       4<9   4,0         4+1=5
+                j=5       5<9   5,0         5+1=6
+                j=6       6<9   6,0         6+1=7
+                j=7       7<9   7,0         7+1=8
+                j=8       8<9   8,0         8+1=9
+                j=9       9<9 --> terminate          
+i=1     1<1 --> terminate                 
+
+Runtime output
+sooriyan
+chandhiran
+chevvai
+budhan
+guru
+sukran
+sani
+rahu
+kedhu
+***another method value based***
+sooriyan
+chandhiran
+chevvai
+budhan
+guru
+sukran
+sani
+rahu
+kedhu
+*/
+                                     
+                                            
