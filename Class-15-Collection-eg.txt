@@ -1,0 +1,70 @@
+//Exersize 01
+//(collection : i) &  (list : i) & (ArrayList<>)
+//projet Sample
+package org.test;
+import java.util.List;
+import java.util.ArrayList;
+public class SampleOne {
+    public static void main(String[] args) {
+        List l = new ArrayList<>();
+            l.add(10); //0
+            l.add(8765.567); //1
+            l.add(987654323271l); //2
+            l.add(true); //3
+            l.add('m'); //4
+            l.add("Arun"); //5
+            l.add(10); //6
+                System.out.println(l);
+                Object a = l.get(3);
+                    System.out.println(a);
+    }
+}
+/* Rut time output
+[10, 8765.567, 987654323271, true, m, Arun, 10]
+true
+*/
+
+
+
+
+
+//Exersize 02
+//In Collection : i but Similar Data Type 
+//project Sample
+package org.test;
+import java.util.List;
+import java.util.ArrayList;
+public class SampleOne {
+    public static void main(String[] args) {
+        System.out.println("***Runtime output of Collection List***");
+        List<Integer> l = new ArrayList<>(); 
+            l.add(10); //0
+            l.add(30); //1
+            l.add(20); //2
+            l.add(40); //3
+            l.add(50); //4
+            l.add(10); //5
+                System.out.println("1. "+l);
+                int size = l.size();
+                    System.out.println("2. Size is : "+size);
+                int index2 = l.get(2); 
+                    System.out.println("3. Index2 value is : "+index2);      
+                boolean va = l.contains(40);
+                    System.out.println("4. 40 value is contain : "+va);
+                int indexvalue = l.indexOf(10);
+                    System.out.println("5. index valaue of 10 is : "+indexvalue);    
+                int lastIndexvalue = l.lastIndexOf(10);
+                    System.out.println("6. Last indexvalaue of 10 is : "+lastIndexvalue);       
+            l.add (1,2000); // to insert
+                System.out.println("7. "+l);
+            l.set (3,500); // to replace
+                System.out.println("8. "+l);
+            l.remove (5); // to remove based on index value 
+                System.out.println("9. "+l);
+            l.clear (); // to clear
+                System.out.println("10. "+l);
+                boolean emptycheck = l.isEmpty();
+                    System.out.println("11. "+emptycheck);
+                    
+    }
+}
