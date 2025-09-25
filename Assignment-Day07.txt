@@ -144,12 +144,153 @@ public class SampleOne {
 
 
 //Exersize Day07-4.1
-//ArrayList
+//Collection :i ArrayList
 //project Sample
 package org.test;
+import java.util.List;
+import java.util.ArrayList;
 public class SampleOne {
     public static void main(String[] args) {
+        System.out.println("***collection List ArrayList runtime output***");
+        List a = new ArrayList<>(); // syntax
+            a.add(10);
+            a.add(20);
+            a.add(30);
+            a.add(90);
+            a.add(10);
+            a.add(10);
+            a.add(40);
+            a.add(50);
+                System.out.println("1. value of a is : "+a);
+                int b = a.size();
+                    System.out.println("2. length of a is : "+b);
+
+    }
+}
+/* runtime output
+***collection List ArrayList runtime output***
+1. value of a is : 
+  [10, 20, 30, 90, 10, 10, 40, 50]
+2. length of a is : 8
+*/
 
 
+
+
+
+/*Exersize Day07-4.2
+
+Solve = crate a new Linkedlist with values and find the length of it
+input list = 100,200,300,400,500,600,700. */
+
+//project Sample 
+package org.test;
+import java.util.List;
+import java.util.LinkedList;
+public class SampleOne {
+    public static void main(String[] args) {
+        List a = new LinkedList<>();
+            a.add(100);
+            a.add(200);
+            a.add(300);
+            a.add(400);
+            a.add(500);
+            a.add(600);
+            a.add(700);
+        System.out.println("1. a value is : "+a);
+            int b = a.size();
+            System.out.println("2. Length of a is : "+b);
+    }
+}
+/* Runtime output1. a value is : [100, 200, 300, 400, 500, 600, 700]
+2. Length of a is : 7
+*/
+
+
+
+
+
+/* Exersize Day7-4.3
+Solve it: Create a new vector with value and find the length of it
+input : List = 105,205,205,305,405,505,605,705,805 */
+
+//project Sample
+package org.test;
+import java.util.List;
+import java.util.Vector;
+public class SampleOne {
+    public static void main(String[] args) {
+        List a = new Vector<>();
+            a.add(105);
+            a.add(205);
+            a.add(305);
+            a.add(405);
+            a.add(505);
+            a.add(605);
+            a.add(705);
+            a.add(805);
+                System.out.println("1. Value of a is : "+a);
+                    int b = a.size();
+                        System.out.println("2. Length of a is : "+b);
+    }
+}
+/* runtime output
+1. Value of a is : [105, 205, 305, 405, 505, 605, 705, 805]
+2. Length of a is : 8
+*/
+
+
+
+
+
+/*Exersize Day07-4.4
+Solve it: Create a new LinkedList with values and find the size() of it 
+input: List = 100,200,300,400,500,600,700 */
+
+//project Sample
+package org.test;
+import java.util.List;
+import java.util.LinkedList;
+public class SampleOne {
+    public static void main(String[] args) {
+        List a = new LinkedList<>();
+            a.add(100);
+            a.add(200);
+            a.add(300);
+            a.add(400);
+            a.add(500);
+            a.add(600);
+            a.add(700);
+                System.out.println("1. a Value is : "+a);
+                int b = a.size();
+                    System.out.println("2. Length of a is : "+b);
+    }
+}
+/* Runtime output
+1. a Value is : [100, 200, 300, 400, 500, 600, 700]
+2. Length of a is : 7
+*/
+
+
+
+
+
+/* Exersize Day07-5.1
+Solve it: Get the first index value of 10
+input: List=10,20,30,90 */
+
+//project Sample
+package org.test;
+import java.util.List;
+import java.util.ArrayList;
+public class SampleOne {
+    public static void main(String[] args) {
+        List a = new ArrayList<>();
+            a.add(10);
+            a.add(20);
+            a.add(30);
+            a.add(90);
+                int b = a.indexOf(10);
+                    System.out.println("1. Index value of 10 is : "+b);
     }
 }
