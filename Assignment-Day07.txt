@@ -1,4 +1,4 @@
-//Exersize 01
+//Exersize Day07-01
 //Array
 //project Sample
 package org.test;
@@ -42,3 +42,114 @@ public class SampleOne {
 2. valaue of i : 10
 3. Sum values of array 55
 */
+
+
+
+
+
+//Exersize Day07-02
+//project average of array value
+//project Sample
+package org.test;
+public class SampleOne {
+    public static void main(String[] args) {
+        System.out.println("***average value of array***");
+            int a[] = new int[10];
+                a[0] = 1;
+                a[1] = 2;
+                a[2] = 3;
+                a[3] = 4;
+                a[4] = 5;
+                a[5] = 6;
+                a[6] = 7;
+                a[7] = 8;
+                a[8] = 9;
+                a[9] = 10;
+                int sb = a.length;
+                    System.out.println("1. Size of array value is : "+sb);
+                 for(int i=0; i<sb; i++) {
+                        System.out.println("2. Value is: "+a[i]);   
+                 }   
+                 int sum = a[0]+a[1]+a[2]+a[3]+a[4]+a[5]+a[6]+a[7]+a[8]+a[9];
+                        double ab = sum/7;
+                            System.out.println("3. average value of array is :"+ab);
+    }
+}
+/*
+***average value of array***
+1. Size of array value is : 10
+2. Value of index : 1
+2. Value of index : 2
+2. Value of index : 3
+2. Value of index : 4
+2. Value of index : 5
+2. Value of index : 6
+2. Value of index : 7
+2. Value of index : 8
+2. Value of index : 9
+2. Value of index : 10
+3. average value of array is :7.0
+*/
+
+
+
+
+
+//Exersize Day07-03
+//remore dublicate value from array
+//project Sample
+package org.test;
+import java.util.LinkedHashSet;
+public class SampleOne {
+    public static void main(String[] args) {
+        System.out.println("***array runtime output***");
+            int a[] = new int[8];
+                a[0] = 10;
+                a[1] = 10;
+                a[2] = 20;
+                a[3] = 50;
+                a[4] = 60;
+                a[5] = 80;
+                a[6] = 60;
+                a[7] = 50;
+                int sa = a.length;
+                    System.out.println("1. Length of a is : "+sa);
+                    for(int i=0; i<sa; i++) {
+                        System.out.println("2. value is : "+a[i]);
+                    }    
+                LinkedHashSet<Integer> set = new LinkedHashSet<>();
+                    for(int i=0; i<sa; i++) {
+                        set.add(a[i]);
+                    }
+                        System.out.println("3. remove dublicate value is : "+set);
+    }
+}
+/* Runtime output
+***array runtime output***
+1. Length of a is : 8
+2. value is : 10
+2. value is : 10
+2. value is : 20
+2. value is : 50
+2. value is : 60
+2. value is : 80
+2. value is : 60
+2. value is : 50
+3. remove dublicate value is :
+  [10, 20, 50, 60, 80]
+*/
+
+
+
+
+
+//Exersize Day07-4.1
+//ArrayList
+//project Sample
+package org.test;
+public class SampleOne {
+    public static void main(String[] args) {
+
+
+    }
+}
