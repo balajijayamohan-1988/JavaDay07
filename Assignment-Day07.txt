@@ -1,0 +1,44 @@
+//Exersize 01
+//Array
+//project Sample
+package org.test;
+import java.lang.String;
+public class SampleOne {
+    public static void main(String[] args) {
+        System.out.println("***array runtime output***");
+        int a[] = new int[10];
+            a[0] = 1;
+            a[1] = 2;
+            a[2] = 3;
+            a[3] = 4;
+            a[4] = 5;
+            a[5] = 6;
+            a[6] = 7;
+            a[7] = 8;
+            a[8] = 9;
+            a[9]= 10;
+            int size = a.length;//remove bracket for array only
+                System.out.println("1. length of array is : "+size);
+                for(int i=0; i<size; i++) {
+                    System.out.println("2. valaue of i : "+a[i]);
+                }
+                int b = (a[0]+a[1]+a[2]+a[3]+a[4]+a[5]+a[6]+a[7]+a[8]+a[9]);   
+                    System.out.println("3. Sum values of array "+b); 
+            
+
+    }
+}
+/* runtime output***array runtime output***
+1. length of array is : 10
+2. valaue of i : 1
+2. valaue of i : 2
+2. valaue of i : 3
+2. valaue of i : 4
+2. valaue of i : 5
+2. valaue of i : 6
+2. valaue of i : 7
+2. valaue of i : 8
+2. valaue of i : 9
+2. valaue of i : 10
+3. Sum values of array 55
+*/
