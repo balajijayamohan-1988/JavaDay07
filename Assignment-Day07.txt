@@ -294,3 +294,164 @@ public class SampleOne {
                     System.out.println("1. Index value of 10 is : "+b);
     }
 }
+//ruttime output
+//1. Index value of 10 is : 0
+
+
+
+
+
+/*Day07-Tast 5.2
+Description: Get the last index value of 10
+Input: List=10,20,30,90,10,10,40,50 */
+
+//project Sample
+package org.test;
+import java.util.*;
+public class SampleOne {
+    public static void main(String[] args) {
+        List<Integer> a = new ArrayList<>();
+            a.add(10);
+            a.add(20);
+            a.add(30);
+            a.add(90);
+            a.add(10);
+            a.add(10);
+            a.add(40);
+            a.add(50);
+                int b = a.lastIndexOf(10);
+                    System.out.println("Value is : "+b);
+    }
+}
+//runtime output
+//Value is : 5
+
+
+
+
+
+
+/* Day07-Task 5.3
+Description: Get the index value of 50
+Input: List=10,20,30,90,10,10,40,50 */
+
+//project Sample
+package org.test;
+import java.util.*;
+public class SampleOne {
+    public static void main(String[] args) {
+        List<Integer> a = new LinkedList<>();
+            a.add(10);
+            a.add(20);
+            a.add(30);
+            a.add(90);
+            a.add(10);
+            a.add(10);
+            a.add(40);
+            a.add(50);
+               int a1 = a.indexOf(50);
+                System.out.println("Value of a1 is : "+a1);
+    }
+}
+//runtime output
+//Value of a1 is : 7
+
+
+
+
+
+/* Day07-Tast 5.4
+Description: Get the index value of 90
+Input: List=10,20,30,90,10,10,40,50 */
+
+//project Sample
+package org.test;
+import java.util.*;
+public class SampleOne {
+    public static void main(String[] args) {
+        List<Integer> a = new ArrayList<>();
+            a.add(10);
+            a.add(20);
+            a.add(30);
+            a.add(90);
+            a.add(10);
+            a.add(10);
+            a.add(40);
+            a.add(50);
+            int a1 = a.indexOf(90);
+                System.out.println("Value of a1 is : "+a1);
+
+    }
+}
+//Runtime output
+//Value of a1 is : 3
+
+
+
+
+
+/* Day07-Tast 5.5
+Description: Get the each index value of 10 present in below list
+Input: List=10,20,30,90,10,10,40,50,10 */
+
+//Project Sample
+package org.test;
+import java.util.*;
+public class SampleOne {
+    public static void main(String[] args) {
+        List<Integer> a = new ArrayList<>();
+            a.add(10);
+            a.add(20);
+            a.add(30);
+            a.add(90);
+            a.add(10);
+            a.add(10);
+            a.add(40);
+            a.add(50);
+            a.add(10);
+                int a1 = a.indexOf(10);
+                    System.out.println("Value of a1 : "+a1);
+                int a2 = a.lastIndexOf(10);
+                    System.out.println("Value of a2 : "+a2);
+    }
+}
+/*Runtime output
+Value of a1 : 0
+Value of a2 : 8 
+*/
+
+
+
+
+
+/* Day07- Task 5.6
+Description: Get the each index value of 70 present in below list
+Input: List= 10,20,30,90,10,10,40,50,10,70 */
+
+//project Sample
+package org.test;
+import java.util.*;
+public class SampleOne{
+    public static void main(String[] args) {
+        List<Integer> a = new ArrayList<>();
+            a.add(10);
+            a.add(20);
+            a.add(30);
+            a.add(90);
+            a.add(10);
+            a.add(10);
+            a.add(40);
+            a.add(50);
+            a.add(10);
+            a.add(70);
+            int a1 = a.indexOf(70);
+                System.out.println("Value of a1 : "+a1);
+            int a2 = a.lastIndexOf(70);
+                System.out.println("Value of a2 : "+a2);
+
+    }
+}
+/* runtime output
+Value of a1 : 9
+Value of a2 : 9
+*/
